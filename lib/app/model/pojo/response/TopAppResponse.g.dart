@@ -16,10 +16,10 @@ Map<String, dynamic> _$TopAppResponseToJson(TopAppResponse instance) =>
     <String, dynamic>{'feed': instance.feed};
 
 Feed _$FeedFromJson(Map<String, dynamic> json) {
-  return Feed((json['entry'] as List)
+  return Feed((json['results'] as List)
       ?.map((e) => e == null ? null : Entry.fromJson(e as Map<String, dynamic>))
       ?.toList());
 }
 
 Map<String, dynamic> _$FeedToJson(Feed instance) =>
-    <String, dynamic>{'entry': instance.entry};
+    <String, dynamic>{'results': instance.results};

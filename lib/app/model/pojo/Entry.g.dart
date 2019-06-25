@@ -8,52 +8,39 @@ part of 'Entry.dart';
 
 Entry _$EntryFromJson(Map<String, dynamic> json) {
   return Entry(
-      json['im:name'] == null
-          ? null
-          : Property.fromJson(json['im:name'] as Map<String, dynamic>),
-      (json['im:image'] as List)
-          ?.map((e) =>
-              e == null ? null : Property.fromJson(e as Map<String, dynamic>))
-          ?.toList(),
-      json['summary'] == null
-          ? null
-          : Property.fromJson(json['summary'] as Map<String, dynamic>),
-      json['im:price'] == null
-          ? null
-          : Property.fromJson(json['im:price'] as Map<String, dynamic>),
-      json['im:contentType'] == null
-          ? null
-          : Property.fromJson(json['im:contentType'] as Map<String, dynamic>),
-      json['title'] == null
-          ? null
-          : Property.fromJson(json['title'] as Map<String, dynamic>),
-      json['link'] == null
-          ? null
-          : Property.fromJson(json['link'] as Map<String, dynamic>),
-      json['id'] == null
-          ? null
-          : Property.fromJson(json['id'] as Map<String, dynamic>),
-      json['im:artist'] == null
-          ? null
-          : Property.fromJson(json['im:artist'] as Map<String, dynamic>),
-      json['category'] == null
-          ? null
-          : Property.fromJson(json['category'] as Map<String, dynamic>),
-      json['im:releaseDate'] == null
-          ? null
-          : Property.fromJson(json['im:releaseDate'] as Map<String, dynamic>));
+      json['name'] as String,
+      json['artworkUrl100'] as String,
+      json['summary'] as String,
+      json['price'] as String,
+      json['kind'] as String,
+      json['title'] as String,
+      json['link'] as String,
+      json['id'] as String,
+      json['artistName'] as String,
+      json['category'] as String,
+      json['releaseDate'] as String);
 }
 
-Map<String, dynamic> _$EntryToJson(Entry instance) => <String, dynamic>{
-      'im:name': instance.imName,
-      'im:image': instance.imImage,
-      'summary': instance.summary,
-      'im:price': instance.imPrice,
-      'im:contentType': instance.imContentType,
-      'title': instance.title,
-      'link': instance.link,
-      'id': instance.id,
-      'im:artist': instance.imArtist,
-      'category': instance.category,
-      'im:releaseDate': instance.imReleaseDate
-    };
+Map<String, dynamic> _$EntryToJson(Entry instance) {
+  final val = <String, dynamic>{
+    'name': instance.imName,
+    'artworkUrl100': instance.imImage,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('summary', instance.summary);
+  val['price'] = instance.imPrice;
+  val['kind'] = instance.imContentType;
+  writeNotNull('title', instance.title);
+  writeNotNull('link', instance.link);
+  val['id'] = instance.id;
+  val['artistName'] = instance.imArtist;
+  writeNotNull('category', instance.category);
+  val['releaseDate'] = instance.imReleaseDate;
+  return val;
+}

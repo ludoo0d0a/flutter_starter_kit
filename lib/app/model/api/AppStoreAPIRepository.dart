@@ -8,14 +8,13 @@ import 'package:flutter_starter_kit/utility/log/Log.dart';
 import 'package:rxdart/rxdart.dart';
 
 class AppStoreAPIRepository{
-  static const int TOP_100 = 100;
+  static const int TOP_100 = 20; //100;
   static const int TOP_10 = 10;
 
   APIProvider _apiProvider;
   DBAppStoreRepository _dbAppStoreRepository;
 
   AppStoreAPIRepository(this._apiProvider, this._dbAppStoreRepository);
-
 
   Observable<List<AppContent>> getTop100FreeApp(){
     return Observable.fromFuture(_apiProvider.getTopFreeApp(TOP_100))
@@ -46,7 +45,7 @@ class AppStoreAPIRepository{
 
   Observable<List<AppContent>> _convertFromEntry(TopAppResponse response){
     List<AppContent> appContent = [];
-    for(Entry entry in response.feed.entry){
+    for(Entry entry in response.feed.results){
       appContent.add(AppContent.fromEntry(entry));
     }
     return Observable.just(appContent);

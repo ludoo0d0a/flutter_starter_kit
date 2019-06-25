@@ -7,23 +7,27 @@ part 'Entry.g.dart';
 class Entry{
 
 
-  @JsonKey(name: 'im:name')
-  Property imName;
-  @JsonKey(name: 'im:image')
-  List<Property> imImage;
-  Property summary;
-  @JsonKey(name: 'im:price')
-  Property imPrice;
-  @JsonKey(name: 'im:contentType')
-  Property imContentType;
-  Property title;
-  Property link;
-  Property id;
-  @JsonKey(name: 'im:artist')
-  Property imArtist;
-  Property category;
-  @JsonKey(name: 'im:releaseDate')
-  Property imReleaseDate;
+  @JsonKey(name: 'name')
+  String imName;
+  @JsonKey(name: 'artworkUrl100', includeIfNull: false)
+  String imImage;
+  @JsonKey(includeIfNull: false)
+  String summary;
+  @JsonKey(name: 'price', includeIfNull: false)
+  String imPrice;
+  @JsonKey(name: 'kind', includeIfNull: false)
+  String imContentType;
+  @JsonKey(includeIfNull: false)
+  String title;
+  @JsonKey(includeIfNull: false)
+  String link;
+  String id;
+  @JsonKey(name: 'artistName', includeIfNull: false)
+  String imArtist;
+  @JsonKey(includeIfNull: false)
+  String category;
+  @JsonKey(name: 'releaseDate', includeIfNull: false)
+  String imReleaseDate;
 
 
   Entry(this.imName, this.imImage, this.summary, this.imPrice,

@@ -89,3 +89,12 @@ flutter packages pub run gen_lang:generate
 #### Flavouring
 - [Flavoring Flutter](https://medium.com/@salvatoregiordanoo/flavoring-flutter-392aaa875f36)
 - [Creating flavors of a Flutter app (Flutter & Android setup)](http://cogitas.net/creating-flavors-of-a-flutter-app/)
+
+#### Updates by LudoO
+- Rss flux changed, urls are not the same, entities changed.
+- compressionState added in [flutter_stetho](https://github.com/brianegan/flutter_stetho/pull/19) 
+- some minor fixes
+
+References :
+- [RSS generator](https://rss.itunes.apple.com/fr-fr)
+- [Top free apps](https://rss.itunes.apple.com/api/v1/us/ios-apps/top-free/all/10/explicit.json)

@@ -18,9 +18,9 @@ class TopAppResponse{
 
 @JsonSerializable()
 class Feed{
-  List<Entry> entry;
+  List<Entry> results;
 
-  Feed(this.entry);
+  Feed(this.results);
 
   factory Feed.fromJson(Map<String, dynamic> json) => _$FeedFromJson(json);
 

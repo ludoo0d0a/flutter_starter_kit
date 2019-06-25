@@ -77,30 +77,30 @@ class AppContent{
   AppContent.init(this.trackId, this.trackName, this.artworkUrl100);
 
   factory AppContent.fromEntry(Entry entry) {
-    String artworkUrl100;
-    String artworkUrl60;
-    for(Property property in entry.imImage){
-      if(property.attributes.height.contains("100")){
-        artworkUrl100 = property.label;
-      }
-      else if(null == artworkUrl60 && (property.attributes.height.contains("53") || property.attributes.height.contains("75"))){
-        artworkUrl60 = property.label;
-      }
-    }
+    String artworkUrl100=entry.imImage;
+    String artworkUrl60=artworkUrl100;
+//    for(Property property in entry.imImage){
+//      if(property.attributes.height.contains("100")){
+//        artworkUrl100 = property.label;
+//      }
+//      else if(null == artworkUrl60 && (property.attributes.height.contains("53") || property.attributes.height.contains("75"))){
+//        artworkUrl60 = property.label;
+//      }
+//    }
 
-    String trackName = entry.imName.label;
-    String trackCensoredName = entry.imName.label;
-    num trackId = num.parse(entry.id.attributes.imId);
-    String bundleId = entry.id.attributes.imBundleId;
-    String description = entry.summary.label;
-    double price = double.parse(entry.imPrice.attributes.amount);
-    String currency = entry.imPrice.attributes.currency;
-    num primaryGenreId = num.parse(entry.category.attributes.imId); // number
-    String trackViewUrl = entry.link.attributes.href;
-    String artistName = entry.imArtist.label;
-    String artistViewUrl = null != entry.imArtist.attributes ? entry.imArtist.attributes.href : null;
-    List<String> genres = [entry.category.attributes.label];
-    String releaseDate = entry.imReleaseDate.label;
+    String trackName = entry.imName;
+    String trackCensoredName = entry.imName;
+    num trackId = num.parse(entry.id);
+    String bundleId = entry.id;
+    String description = entry.summary;
+    double price = 0; //double.parse(entry.imPrice);
+    String currency = entry.imPrice;
+    num primaryGenreId = 11; //num.parse(entry.category); // number
+    String trackViewUrl = entry.link;
+    String artistName = entry.imArtist;
+    String artistViewUrl = entry.imArtist;
+    List<String> genres = [entry.category];
+    String releaseDate = entry.imReleaseDate;
     return AppContent(null, null,
       null, null, artworkUrl60,
       null, artworkUrl100, artistViewUrl,
