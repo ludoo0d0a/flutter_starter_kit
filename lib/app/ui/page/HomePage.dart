@@ -92,21 +92,23 @@ class _HomePageState extends State<HomePage> {
     showDialog(
         context: context,
         barrierDismissible: false,
-        child: Dialog(
-            child: Container(
-                padding: EdgeInsets.all(16),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    CircularProgressIndicator(),
-                    Container(
-                        margin: EdgeInsets.only(top: 8),
-                        child: Text(S.of(context).dialogLoading)
-                    )
-                  ],
-                )
-            )
-        )
+        builder: (BuildContext context) {
+          return Dialog(
+              child: Container(
+                  padding: EdgeInsets.all(16),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      CircularProgressIndicator(),
+                      Container(
+                          margin: EdgeInsets.only(top: 8),
+                          child: Text(S.of(context).dialogLoading)
+                      )
+                    ],
+                  )
+              )
+          );
+        }
     );
   }
 
@@ -114,15 +116,7 @@ class _HomePageState extends State<HomePage> {
     return StreamBuilder(
       stream: bloc.feedList,
       builder: (context, snapshot) {
-
-
         switch(snapshot.connectionState){
-          case ConnectionState.none:
-          case ConnectionState.waiting:{
-            return Center(
-              child: Text(S.of(context).dialogLoading)
-            );
-          }
           case ConnectionState.done:
           case ConnectionState.active:{
 
@@ -140,14 +134,11 @@ class _HomePageState extends State<HomePage> {
                 itemBuilder: (context, index) {
 //              Log.info('index : $index');
                   HomeListItem listItem = feedList[index];
-
                   if(null == _keys[listItem.getId()]){
                     _keys[listItem.getId()] = ValueKey(listItem.getId());
                   }
 
                   var key = _keys[listItem.getId()];
-
-
                   if(HomeListType.TYPE_FEATURE == listItem.type){
                     return Container(
                       key: key,
@@ -156,7 +147,6 @@ class _HomePageState extends State<HomePage> {
                   }
 
                   bool isFeatureListItemExist = HomeListType.TYPE_FEATURE == feedList[0].type;
-
                   return StreamListItem<HomeListItem, num>(
                       key: key,
                       initialData: listItem,
@@ -175,6 +165,13 @@ class _HomePageState extends State<HomePage> {
                       }
                   );
                 }
+            );
+          }
+          case ConnectionState.none:
+          case ConnectionState.waiting:
+          default: {
+            return Center(
+                child: Text(S.of(context).dialogLoading)
             );
           }
         }
@@ -201,7 +198,7 @@ class _HomePageState extends State<HomePage> {
               itemBuilder: (context, index) {
                 AppContent app = featureListItem.entryList[index];
                 String name = app.trackName;
-                String category = app.genres[0];
+                String category = app.genres[0]==null ? "" : app.genres[0];
                 String heroTag = 'featureAppIcon_$index';
                 String titleTag = 'featureAppTitle_$index';
 
@@ -261,8 +258,8 @@ class _HomePageState extends State<HomePage> {
 
   Widget buildTopAppListItem(TopAppListItem listItem, int index, bool isFeatureListItemExist){
     AppContent app = listItem.entry;
-    String name = app.trackName;
-    String category = app.genres[0];
+    String name = "track-"+app.trackName;
+    String category = app.genres[0]==null ? "" : app.genres[0];
     double rating = null != app.averageUserRating ? app.averageUserRating : 0.0;
     num userCount = null != app.userRatingCount ? app.userRatingCount : 0;
 
