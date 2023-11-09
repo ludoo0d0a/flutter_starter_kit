@@ -1,0 +1,405 @@
+repo_name: ludoo0d0a/flutter_starter_kit
+report_id: 63bfbb69f5df407a05937a30316c4ee2
+repo_type: Public
+timestamp: '2023-11-09T21:36:37+00:00'
+requested_by: ludoo0d0a
+provider: github
+branch: master
+detected_tools_count: 31
+tools:
+- name: Dart
+  description: A new web programming language with libraries, a virtual machine, and
+    tools
+  website_url: https://www.dartlang.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1646/Twitter-02.png
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source: pubspec.yaml
+  last_updated_by: King Wu
+  last_updated_on: 2019-01-11 10:21:47.000000000 Z
+- name: Kotlin
+  description: Statically typed Programming Language targeting JVM and JavaScript
+  website_url: https://kotlinlang.org/
+  open_source: true
+  hosted_saas: true
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/3750/pCfEzr6L.png
+  detection_source: Repo Metadata
+- name: Objective-C
+  description: The primary programming language you use when writing software for
+    OS X and iOS
+  website_url: https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1008/xcode.png
+  detection_source: Repo Metadata
+- name: Ruby
+  description: A dynamic, interpreted, open source programming language with a focus
+    on simplicity and productivity
+  website_url: https://www.ruby-lang.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source: Repo Metadata
+- name: Swift
+  description: 'An innovative new programming language for Cocoa and Cocoa Touch. '
+  website_url: https://developer.apple.com/swift/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1009/tuHsaI2U.png
+  detection_source: Repo Metadata
+- name: Android SDK
+  description: An SDK that provides you the API libraries and developer tools necessary
+    to build, test, and debug apps for Android.
+  website_url: http://developer.android.com
+  version: '27.0'
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1010/m8jf0po4imu8t5eemjdd.png
+  detection_source_url: android/app/build.gradle
+  detection_source: android/app/build.gradle
+  last_updated_by: King Wu
+  last_updated_on: 2019-01-11 10:21:47.000000000 Z
+- name: Flutter
+  description: Cross-platform mobile framework from Google
+  website_url: https://flutter.io/
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Cross-Platform Mobile Development
+  image_url: https://img.stackshare.io/service/7180/flutter-mark-square-100.png
+  detection_source: pubspec.yaml
+  last_updated_by: King Wu
+  last_updated_on: 2019-02-12 07:30:43.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: Gradle
+  description: A powerful build system for the JVM
+  website_url: https://www.gradle.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Java Build Tools
+  image_url: https://img.stackshare.io/service/975/gradlephant-social-black-bg.png
+  detection_source: android/app/build.gradle
+  last_updated_by: King Wu
+  last_updated_on: 2019-01-11 10:21:47.000000000 Z
+- name: RubyGems
+  description: Easily download, install, and use ruby software packages on your system
+  website_url: https://rubygems.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg
+  detection_source: pubspec.yaml
+  last_updated_by: King Wu
+  last_updated_on: 2019-01-11 10:21:47.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source: pubspec.yaml
+  last_updated_by: King Wu
+  last_updated_on: 2019-01-11 10:21:47.000000000 Z
+- name: Android OS
+  description: An open source mobile operating system by Google
+  website_url: https://www.android.com
+  version: '8.1'
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Operating Systems
+  image_url: https://img.stackshare.io/service/9586/ZvmtaSXW_400x400.jpg
+  detection_source_url: android/app/build.gradle
+  detection_source: android/app/build.gradle
+  last_updated_by: King Wu
+  last_updated_on: 2019-01-11 10:21:47.000000000 Z
+- name: analyzer
+  description: This package provides a library that performs static analysis of Dart
+    code
+  package_url: https://pub.dartlang.org/analyzer
+  version: 0.33.3
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: kw101
+  last_updated_on: 2019-05-27 15:52:09.000000000 Z
+- name: build_runner
+  description: A build system for Dart code generation and modular compilation
+  package_url: https://pub.dartlang.org/build_runner
+  version: 1.0.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: King Wu
+  last_updated_on: 2019-02-12 07:30:43.000000000 Z
+- name: cached_network_image
+  description: Flutter library to load and cache network images
+  package_url: https://pub.dartlang.org/cached_network_image
+  version: 0.8.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: kw101
+  last_updated_on: 2019-05-27 15:52:09.000000000 Z
+- name: cupertino_icons
+  description: Default icons asset for Cupertino widgets based on Apple styled icons
+  package_url: https://pub.dartlang.org/cupertino_icons
+  version: 0.1.2
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: King Wu
+  last_updated_on: 2019-02-12 07:30:43.000000000 Z
+- name: dio
+  description: |-
+    A powerful HTTP networking package,
+    supports Interceptors,
+    Aborting and canceling a request,
+    Custom adapters
+  package_url: https://pub.dartlang.org/dio
+  version: 2.1.5
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: King Wu
+  last_updated_on: 2019-01-11 10:21:47.000000000 Z
+  vulnerabilities:
+  - name: dio vulnerable to CRLF injection with HTTP method string
+    cve_id: CVE-2021-31402
+    cve_url: https://github.com/advisories/GHSA-9324-jv53-9cc8
+    detected_date: Nov 9
+    severity: high
+    first_patched: 5.0.0
+  - name: 'Duplicate Advisory: Improper Neutralization of CRLF Sequences in dio'
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-jwpw-q68h-r678
+    detected_date: Nov 9
+    severity: high
+    first_patched: 5.0.0
+- name: fluro
+  description: Fluro is a null-safe Flutter routing library that adds flexible routing
+    options like wildcards
+  package_url: https://pub.dartlang.org/fluro
+  version: 1.4.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: King Wu
+  last_updated_on: 2019-02-12 07:30:43.000000000 Z
+- name: flutter
+  description: Visit flutter.io to get started
+  package_url: https://pub.dartlang.org/flutter
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source: pubspec.yaml
+  last_updated_by: King Wu
+  last_updated_on: 2019-02-12 07:30:43.000000000 Z
+- name: flutter_stetho
+  description: A network inspector for Flutter on Android using the Chrome Dev Tools
+  package_url: https://pub.dartlang.org/flutter_stetho
+  version: 0.2.2
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: King Wu
+  last_updated_on: 2019-02-12 07:30:43.000000000 Z
+- name: gen_lang
+  description: Gen_lang is a dart library for internationalization
+  package_url: https://pub.dartlang.org/gen_lang
+  version: 0.1.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: kw101
+  last_updated_on: 2019-05-27 15:52:09.000000000 Z
+- name: json_annotation
+  description: Classes and helper functions that support JSON code generation via
+    the `json_serializable` package
+  package_url: https://pub.dartlang.org/json_annotation
+  version: 2.4.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: kw101
+  last_updated_on: 2019-05-27 15:52:09.000000000 Z
+- name: json_serializable
+  description: Automatically generate code for converting to and from JSON by annotating
+    Dart classes
+  package_url: https://pub.dartlang.org/json_serializable
+  version: 3.0.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: kw101
+  last_updated_on: 2019-05-27 15:52:09.000000000 Z
+- name: lang_table
+  description: Lang_table is a dart plugin to generate string files from a source
+  package_url: https://pub.dartlang.org/lang_table
+  version: 0.1.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: kw101
+  last_updated_on: 2019-05-27 15:52:09.000000000 Z
+- name: logging
+  description: Provides APIs for debugging and error logging
+  package_url: https://pub.dartlang.org/logging
+  version: 0.11.3
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: King Wu
+  last_updated_on: 2019-02-12 07:30:43.000000000 Z
+- name: rxdart
+  description: RxDart is an implementation of the popular reactiveX api for asynchronous
+    programming
+  package_url: https://pub.dartlang.org/rxdart
+  version: 0.22.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: kw101
+  last_updated_on: 2019-05-27 15:52:09.000000000 Z
+- name: smooth_star_rating
+  description: A smooth rating bar that supports full and half rating with easy icon
+    customizability
+  package_url: https://pub.dartlang.org/smooth_star_rating
+  version: 1.0.2
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: kw101
+  last_updated_on: 2019-05-27 15:52:09.000000000 Z
+- name: sprintf
+  description: Dart implementation of sprintf
+  package_url: https://pub.dartlang.org/sprintf
+  version: 4.0.2
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: kw101
+  last_updated_on: 2019-05-27 15:52:09.000000000 Z
+- name: sqflite
+  description: Flutter plugin for SQLite
+  package_url: https://pub.dartlang.org/sqflite
+  version: 1.1.5
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/pub/image.png
+  detection_source_url: pubspec.yaml
+  detection_source: pubspec.yaml
+  last_updated_by: kw101
+  last_updated_on: 2019-05-27 15:52:09.000000000 Z
+- name: org.jetbrains.kotlin:kotlin-stdlib-jdk7
+  description: Kotlin Standard Library JDK 7 extension
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source: android/app/build.gradle
+  last_updated_by: King Wu
+  last_updated_on: 2019-01-11 10:21:47.000000000 Z
